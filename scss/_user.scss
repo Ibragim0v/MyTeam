@@ -1,0 +1,131 @@
+.user {
+    background-color: $deep-jungle-green;
+    
+    &__container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: calc(0% - 100px);
+            width: 200px;
+            height: 200px;
+            background-image: url('./../img/user-disk.png');
+            background-repeat: no-repeat;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: calc(0% - 100px);
+            right: calc(0% - 150px);
+            width: 200px;
+            height: 200px;
+            background-image: url('./../img/user-square.png');
+            background-repeat: no-repeat;
+        }
+    }
+    
+    &__wrapper {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    
+    &__heading {
+        color: $white;
+        text-align: center;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+        background-color: $sacramento-state-green;
+        width: 350px;
+        height: 253px;
+        margin: 30px;
+        color: $white;
+        text-align: center;
+    }
+    
+    &__img {
+        margin-top: 35px;
+    }
+    
+    &__name {
+        color: $rapture-blue;
+        margin-top: 13px;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: "Livvic-600";
+    }
+    
+    &__job {
+        font-size: 15px;
+        line-height: 25px;
+        font-family: "Livvic-600";
+    }
+    
+    &__btn {
+        background-color: $light-coral;
+        border-radius: 50%;
+        padding: 18px 20px;
+        position: relative;
+        top: 40px;
+
+        &:hover {
+            background-color: $rapture-blue;
+        }
+    }
+
+    &__client {
+        color: $rapture-blue;
+        margin-top: 35px;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: "Livvic-600";
+    }
+    
+    &__commit {
+        font-size: 15px;
+        line-height: 25px;
+        font-family: "Livvic-600";
+        padding:8px 48px;
+    }
+    
+    &__list-icon {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__item-icon + &__item-icon {
+        margin-left: 16px;
+    }
+    
+    &__link-icon {
+        color: $white;
+
+        &:hover {
+            color: $light-coral;
+        }
+    }
+    
+    &__btn-k {
+        background-color: $rapture-blue;
+        border-radius: 50%;
+        padding: 18px 20px;
+        position: relative;
+        top: 55px;
+        
+        &:hover {
+            background-color: $light-coral;
+        }
+    }
+
+}

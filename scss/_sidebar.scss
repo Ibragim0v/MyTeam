@@ -1,0 +1,83 @@
+.sidebar {
+    background-color: $sacramento-state-green;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0%;
+            right: calc(0% - 300px);
+            width: 200px;
+            height: 244px;
+            background-image: url("./../img/sidebar-disk.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__text {
+        font-family: "Livvic-700";
+        font-size: 48px;
+        line-height: 48px;
+        color: $white;
+        width: 445px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: calc(0% - 54px);
+            width: 50px;
+            height: 4px;
+            background-color: $light-coral;
+        }
+    }
+
+    &__list {
+        margin-left: 132px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item + &__item {
+        margin-top: 38px;
+    }
+
+    &__img {
+        width: 72px;
+        height: 72px;
+        object-fit: contain;
+    }
+
+    &__wrapper-item {
+        margin-left: 23px;
+    }
+
+    &__heading {
+        font-family: "Livvic-700";
+        color: $light-coral;
+        font-style: 18px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    &__paragraph {
+        font-family: "Livvic-600";
+        color: $white;
+        font-style: 15px;
+        line-height: 25px;
+        width: 445px;
+    }
+}

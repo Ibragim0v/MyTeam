@@ -1,0 +1,52 @@
+.summary {
+    background-color: $midnight-green;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        padding-bottom: 120px;
+        padding-top: 51px;
+        color: $white;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: calc(0% - 420px);
+            width: 200px;
+            height: 200px;
+            background-image: url("./../img/summary-disk.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__heading {
+        font-family: "Livvic-700";
+        font-size: 64px;
+        line-height: 100px;
+    }
+
+    &__text {
+        font-family: "Livvic-600";
+        font-size: 18px;
+        line-height: 28px;
+        width: 600px;
+        margin-left: 125px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -40px;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background-color: $light-coral;
+        }
+    }
+}

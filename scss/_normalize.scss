@@ -1,0 +1,61 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Livvic-600", 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Livvic-600';
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-c {
+    font-family: 'Livvic-600';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: $white;
+    background-color: transparent;
+    border: 2px solid $white;
+    border-radius: 24px;
+    padding: 8px 36px;
+}
+
+.btn-c:hover {
+    background-color: $white;
+    color: $sacramento-state-green;
+}
+
+.clr {
+    clear: both;
+}
+
+img {
+    vertical-align: middle;
+}

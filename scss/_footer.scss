@@ -1,0 +1,86 @@
+.footer {
+    background-color: $dark-green;
+    
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__list {
+        display: flex;
+        // justify-content: space-between;
+        padding-top: 48px;
+        padding-bottom: 55px;
+    }
+    
+    &__item + &__item{
+        margin-left: 125px;
+    }
+    
+    &__img-logo {
+        width: 160px;
+        height: 40px;
+        object-fit: contain;
+    }
+    
+    &__list-pages {
+        display: flex;
+        margin-top: 25px;
+    }
+    
+    &_item-page + &_item-page{
+        margin-left: 40px;
+    }   
+
+    &__link-page {
+        color: $white;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        font-family: "Livvic-600";
+
+        &:hover {
+            color: $light-coral;
+        }
+    }
+    
+    &__address {
+        color: $white;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 600;
+        font-family: "Livvic-600";
+        opacity: 0.4;
+        width: 445px;
+    }
+    
+    &__list-icon {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 51px;
+    }
+    
+    &__item-icon + &__item-icon{
+        margin-left: 16px;
+    }
+    
+    &__link-icon {
+        color: $white;
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+
+        &:hover {
+            color: $light-coral;
+        }
+    }
+    
+    &__reserv {
+        color: $white;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 600;
+        font-family: "Livvic-600";
+        opacity: 0.4;
+    }
+}

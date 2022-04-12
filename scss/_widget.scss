@@ -1,0 +1,36 @@
+.widget {
+    background-color: $light-coral;
+    
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__wrapper {
+        display: flex;
+        padding-top: 76px;
+        padding-bottom: 86px;
+    }
+    
+    &__heading {
+        font-size: 48px;
+        line-height: 38px;
+        font-family: "Livvic-700";
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: calc(0% - 10px);
+            left: calc(0% - 350px);
+            width: 200px;
+            height: 244px;
+            background-image: url("./../img/widget-disk.png");
+            background-repeat: no-repeat;
+        }
+    }
+    
+    &__btn {
+        margin-left: 260px;
+    }
+}
